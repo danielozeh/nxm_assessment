@@ -1,0 +1,144 @@
+.btn[class*=bg-]:hover, .btn[class*=bg-]:focus, .btn[class*=bg-].focus {
+    color: #fff;
+}
+
+.bg-pink {
+    background-color: #E91E63;
+    border-color: #E91E63;
+    color: #fff;
+}
+
+.bg-danger-deep {
+    background-color: #C62828;
+    border-color: #C62828;
+    color: #fff;
+}
+
+.bg-danger-faint {
+    background-color: #E57373;
+    border-color: #E57373;
+    color: #fff;
+}
+
+.bg-violet {
+    background-color: #9C27B0;
+    border-color: #9C27B0;
+    color: #fff;
+}
+
+.bg-purple {
+    background-color: #5E35B1;
+    border-color: #5E35B1;
+    color: #fff;
+}
+
+.bg-blue {
+    background-color: #039BE5;
+    border-color: #039BE5;
+    color: #fff;
+}
+
+.bg-teal {
+    background-color: #00897B;
+    border-color: #00897B;
+    color: #fff;
+}
+
+.bg-green {
+    background-color: #8BC34A;
+    border-color: #8BC34A;
+    color: #fff;
+}
+
+.bg-orange {
+    background-color: #FF9800;
+    border-color: #FF9800;
+    color: #fff;
+}
+
+.bg-brown {
+    background-color: #795548;
+    border-color: #795548;
+    color: #fff;
+}
+
+.bg-indigo {
+    background-color: #3F51B5;
+    border-color: #3F51B5;
+    color: #fff;
+}
+
+.bg-grey {
+    background-color: #777777;
+    border-color: #777777;
+    color: #fff;
+}
+
+.bg-slate {
+    background-color: #607D8B;
+    border-color: #607D8B;
+    color: #fff;
+}
+
+.position-right {
+    margin-left: 5px;
+}
+
+.position-right-20 {
+    margin-left: 20px;
+}
+
+.position-left {
+    margin-right: 5px;
+}
+
+.mt-5 {
+    margin-top: 5px !important;
+}
+
+.mt-10 {
+    margin-top: 10px !important;
+}
+
+.mt-15 {
+    margin-top: 15px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.no-mb {
+    margin-bottom: 0 !important;
+}
+
+.small-ul {
+    margin-bottom: 0;
+    font-size: 90%;
+    padding-left: 0;
+    padding-top: 5px;
+}
+
+.small-ul li {
+    list-style: none;
+}
+
+.small-ul li {
+    padding-bottom: 5px;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.dataTables_wrapper {
+    padding: initial !important;
+}
+
+.hideLoader{
+    display: none;
+}

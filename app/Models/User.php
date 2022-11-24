@@ -41,4 +41,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function distributor() {
+        return $this->belongsTo(User::class, 'referred_by');
+    }
+
+    //checks if user is a distributor
+    public function is_distributor() {
+        $check = $this->belongsTo(UserCategory::class, 'id', 'user_id')->where('category_id', '2');
+        return $check;
+    }
 }

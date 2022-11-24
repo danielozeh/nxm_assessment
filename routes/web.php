@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OrderController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Route::get('/', function () {
+//     //return view('welcome');
+// });
+
+Route::get('/', [HomeController::class, 'index']);
+
+Route::group([
+    'prefix' => 'orders'
+],  function($router) {
+    Route::get('/', [OrderController::class, 'getOrders']);
+    Route::get('/{id}', [OrderController::class, 'viewOrder']);
+});
+
+Route::group([
+    'prefix' => 'reports'
+],  function($router) {
+    Route::get('/commission', [OrderController::class, 'commissionReport']);
+    Route::post('/commission', [OrderController::class, 'recentCommissionReports']);
+    Route::get('/rank', [OrderController::class, 'rankReport']);
+    Route::post('/rank', [OrderController::class, 'getrankReports']);
 });
